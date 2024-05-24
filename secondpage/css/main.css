@@ -11,20 +11,3 @@ body {
   height: 16vh;
 }
 
-.header-line {
-  padding-top: 10px;
-  display: flex;
-  align-items: center;
-}
-
-.nav-item {
-  color: black;
-  user-select: none;
-  font-size: 36px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.header-logo {
-  max-width: 100%
-}
