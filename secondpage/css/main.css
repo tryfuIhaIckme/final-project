@@ -8,6 +8,16 @@ html{
   box-sizing: inherit
 }
 
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
+html {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -29,15 +39,19 @@ ul{
 
 .header-line{
   display: flex;
-  min-height: 0;
+  min-height: 15vh;
   justify-content: space-between;
   align-items: center;
   background-color: blueviolet;
+  max-height: 15vh;
 }
 
 .header-logo{
-  margin: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 35px;
   align-items: center;
+
 }
 
 .menu__list{
@@ -47,6 +61,7 @@ ul{
   margin-right: 40px;
   font-size: 36px;
   font-weight: 700;
+  white-space: nowrap
 }
 
 .orderhere {
@@ -58,6 +73,167 @@ ul{
 }
 
 
-.menu{
-  margin-left: 20px;
+.telo {
+  display: flex;
+  justify-content: center;
+  height: 85vh;
+  background-color:rgb(0, 0, 0)
+ }
+
+ .my-flex-box {
+  flex: 0 1 auto;
+ }
+
+ .texa {
+  margin: 0;
+  align-self: stretch;
+  padding: auto;
+  flex: 0 1 100%;
+  color:rgb(255, 255, 255);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 72px;
+  font-weight: 700px;
+  margin-top: 45px;
+  margin-left: 30px;
+ }
+
+ .pic {
+  margin: 0;
+  align-self: stretch;
+  padding: auto;
+  flex: 0 1 100%;
+  background-image:url(../images/21.png);
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+ }
+
+ .header-linee{
+  display: flex;
+  min-height: 15vh;
+  align-items: center;
+  background-color: rgb(41, 52, 78);
+  max-height: 15vh;
+  justify-content: center;
+}
+
+.title1{
+  font-size: 24px;
+  color: rgb(240, 240, 240);
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.otzyv{
+  margin: 20px;
+  align-self: stretch;
+  padding: auto;
+  flex: 0 1 100%;
+  
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+}
+
+.aboutirk {
+  margin: 20px;
+  align-self: stretch;
+  padding: auto;
+  flex: 0 1 100%;
+  text-align: center;
+  vertical-align: middle;
+ }
+
+.otzyv1, .otzyv2, .otzyv3 {
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex: 1 0.5 auto;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.imageinotzyv {
+  flex: 0 1 20%;
+  background-color: rgb(238, 127, 30);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+.textinotzyv{
+  flex: 0 1 80%;
+  background-color: blueviolet;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+#putin{
+  background-image: url(../images/pyupa.png);
+}
+
+#tripadvisor {
+  background-image: url(../images/trip.png);
+}
+
+#bbc {
+  background-image: url(../images/bigblacknews.png);
+}
+
+
+.aboutirk p {
+  color:red;
+}
+.aboutirk h1 {
+  color:red;
+}
+
+.header-lineee{
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #19142A;
+  max-height: 15vh;
+}
+
+.title2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(240, 240, 240);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  background-color: #D7B4B4;
+  border-radius: 65px;
+  min-width: 70%;
+  font-weight: 300;
+}
+
+.rfcreator{
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  background-color: #19142A;
+}
+
+.podtext{
+  height: 15vh;
+  background-color: #19142A;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color:aliceblue
+}
+
+.cards{
+  height: 70vh;
 }
