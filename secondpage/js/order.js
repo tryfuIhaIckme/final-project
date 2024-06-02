@@ -1,15 +1,3 @@
-document.getElementById('remove-block-button').addEventListener('click', function() {
-    const elementIdToRemove = 'block-to-remove';
-    const element = document.getElementById(elementIdToRemove);
-
-    if (element) {
-        element.remove();
-        console.log(`Элемент с id '${elementIdToRemove}' был удален.`);
-    } else {
-        console.log(`Элемент с id '${elementIdToRemove}' не найден.`);
-    }
-});
-
 function toggleTheme() {
     const currentTheme = document.body.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';

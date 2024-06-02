@@ -62,11 +62,14 @@ body {
 	transform-style: preserve-3d;
 }
 h1, h2, h3, h4 {
+	font-size: 48px;
 	font-weight: 100;
 	text-transform: uppercase;
 	width: min-content;
 	line-height: 1;
 	color: #8a2be2;
+	-webkit-text-stroke: 1px #ff0000;
+
 }
 a {
 	font-weight: 100;
