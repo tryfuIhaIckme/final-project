@@ -1,83 +1,116 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Irkutsk travel</title>
-
-	<link href="css/order.css" type="text/css" rel="stylesheet" media="screen">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по Иркутску - Заказать</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <style>
+        .partner-card {
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .partner-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .partner-logo {
+            flex: 0 0 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .partner-logo img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .partner-info h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .partner-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-  <a href="#" id="bubu">
-    <div id="x"></div>
-    </a>
-
   <header class="header">
-
     <div class="container">
       <div class="header-line">
         <div class="header-logo">
-          <img src="images/path.png" alt="">
+          <a href="index.html"><img src="images/path.png" alt="Логотип Путешествия по Иркутску"></a>
         </div>
-
         <nav class="menu">
-
           <ul class="menu__list">
-
-            <li class="menu__item">
-            <a class="menu__link" href="index.html">HOME</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="about.html">ABOUT US</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="calculator.html">CALCULATOR</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="contacts.html">CONTACTS</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="orderhere" href="order.html">ORDER HERE</a>
-            </li>
-
+            <li class="menu__item"><a class="menu__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О НАС</a></li>
+            <li class="menu__item"><a class="menu__link" href="calculator.html">КАЛЬКУЛЯТОР</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="menu__item"><a class="orderhere" href="order.html">ЗАКАЗАТЬ</a></li>
           </ul>
-
         </nav>
-
+        <button id="theme-toggle">Сменить тему</button>
       </div>
     </div>
-
   </header>
 
   <main class="main">
-    <section class="top">
-      <div class="container">
+    <div class="container">
         <div class="telo">
-          <div class="setka">
-            <div class="yandex"><a href="https://www.ya.ru"><p>Яндекс афиша - наш уникальный партнер. Скидка 15% при заказе с промокодом vasya221</p></a></div>
-            <div class="yandexpic"></div>
-            <div class="afisha"><a href="https://www.irk.ru"><p>а это наш иркутск</p></a></div>
-            <div class="afishapic"></div>
-            <div class="tvoyirk"><a href="https://www.afisha.ru"><p>Афиша круто</p></a></div>
-            <div class="tvoyirkpic"></div>
-          </div>
+            <h1>Наши партнеры</h1>
+            <p>Мы сотрудничаем с лучшими компаниями, чтобы сделать ваше путешествие еще более выгодным и комфортным.</p>
+
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="images/yandex.png" alt="Яндекс Афиша">
+                </div>
+                <div class="partner-info">
+                    <h3>Яндекс Афиша</h3>
+                    <p>Наш уникальный партнер. Получите скидку 15% при заказе с промокодом <strong>VASYA221</strong>. <a href="https://www.ya.ru" target="_blank">Перейти на сайт</a></p>
+                </div>
+            </div>
+
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="images/irkru.png" alt="Иркутск.ру">
+                </div>
+                <div class="partner-info">
+                    <h3>Иркутск.ру</h3>
+                    <p>Главный новостной портал нашего города. Узнавайте все самые свежие новости у них. <a href="https://www.irk.ru" target="_blank">Читать новости</a></p>
+                </div>
+            </div>
+
+            <div class="partner-card">
+                <div class="partner-logo">
+                    <img src="images/afisha.png" alt="Афиша">
+                </div>
+                <div class="partner-info">
+                    <h3>Афиша</h3>
+                    <p>Всегда в курсе самых интересных событий. Планируйте свой досуг вместе с "Афишей". <a href="https://www.afisha.ru" target="_blank">Смотреть события</a></p>
+                </div>
+            </div>
+
         </div>
-      </div>
-      </div>
-    </section>
+    </div>
   </main>
 
-
   <script src="js/order.js" defer></script>
-
+  <script src="js/theme.js" defer></script>
 
 </body>
 </html>

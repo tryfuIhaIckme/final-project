@@ -1,216 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Irkutsk travel</title>
-
-	<link href="css/main.css" type="text/css" rel="stylesheet" media="screen">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по Иркутску</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
 </head>
 <body>
 
-  <a href="#" id="bubu">
-  <div id="x"></div>
-  </a>
-
   <header class="header">
-
     <div class="container">
       <div class="header-line">
-
         <div class="header-logo">
-          <img src="images/path.png" alt="">
+          <a href="index.html"><img src="images/path.png" alt="Логотип Путешествия по Иркутску"></a>
         </div>
-
         <nav class="menu">
-
           <ul class="menu__list">
-
-            <li class="menu__item">
-            <a class="menu__link" href="index.html">HOME</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="about.html">ABOUT US</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="calculator.html">CALCULATOR</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="#">CONTACTS</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="orderhere" href="order.html">ORDER HERE</a>
-            </li>
-
+            <li class="menu__item"><a class="menu__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О НАС</a></li>
+            <li class="menu__item"><a class="menu__link" href="calculator.html">КАЛЬКУЛЯТОР</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="menu__item"><a class="orderhere" href="order.html">ЗАКАЗАТЬ</a></li>
           </ul>
-
         </nav>
-
+        <button id="theme-toggle">Сменить тему</button>
       </div>
     </div>
-
   </header>
 
   <main class="main">
-    <section class="top">
-      <div class="container">
-        <div class="telo">
-          <div class="texa">
-            <p>NEW TYPE OF TRAVEL AGENCY</p>
-            <button id="remove-block-button">Я не ищу работу</button>
-          </div>
-
-          <div class="pic">   
-          </div>
-
-        </div>
-      </div>
-      </div>
-    </section>
-  </main>
-
-  <header class="header">
     <div class="container">
-      <div class="header-linee">
-        <div class="title1">
-          <h1>WHO WE ARE?</h1>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <main class="main">
-    <section class="top">
-      <div class="container">
+      <section class="top telo">
+          <div class="texa">
+            <h1>Новый формат турагентства</h1>
+            <p>Откройте для себя красоту Байкала и сибирской природы вместе с нами.</p>
+          </div>
+      </section>
+
+      <section class="who-we-are">
+        <div class="header-linee">
+          <div class="title1">
+            <h2>КТО МЫ?</h2>
+          </div>
+        </div>
         <div class="telo" id="dadab">
+          <div class="aboutirk">
+            <div class="ashka1"><h3>Путешествия по Иркутску</h3></div>
+            <div class="pshka1"><p>Одно из крупнейших туристических агентств в Иркутской области и Сибирском федеральном округе. Мы предлагаем уникальный отдых среди живописной природы нашего края.</p></div>
+          </div>
           <div class="otzyv">
             <div class="otzyv1">
-              <div class="imageinotzyv" id="putin">
-                
-              </div>
-              <div class="textinotzyv">
-                <p>"Лучшее что мы видели"</p>
-              </div>
+              <div class="imageinotzyv" style="background-image: url(https://images.unsplash.com/photo-1552504462-0c6b5fef83c7?w=500&q=80);"></div>
+              <div class="textinotzyv"><p>"Лучшее, что мы когда-либо видели."</p></div>
             </div>
-
             <div class="otzyv2">
-              <div class="imageinotzyv" id="tripadvisor">
-              </div>
-              <div class="textinotzyv">
-                <p>"Лучший региональный проект"</p>
-              </div>
+              <div class="imageinotzyv" style="background-image: url(https://images.unsplash.com/photo-1551918120-0043a8a35622?w=500&q=80);"></div>
+              <div class="textinotzyv"><p>"Лучший региональный проект."</p></div>
             </div>
-
             <div class="otzyv3">
-              <div class="imageinotzyv" id="bbc">
-              </div>
-              <div class="textinotzyv">
-                <p>"Уникальная бизнес концепция"</p>
-              </div>
+              <div class="imageinotzyv" style="background-image: url(https://images.unsplash.com/photo-1552648325-a7e6b7a77b10?w=500&q=80);"></div>
+              <div class="textinotzyv"><p>"Уникальная бизнес-концепция."</p></div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="aboutirk" >
-            <div class="ashka1"><h1>Irkutsk Travel<h1></div>
-            <div class="pshka1"><p>одно из самых крупных туристических агенств
-               в Иркутской Области и Сибирском федеральном округе.
-               Мы предлагаем уникальный опыт отдыха посреди живописной
-              природы нашего края</p></div>
+      <section class="events">
+        <div class="header-lineee">
+          <div class="title2">
+            <h2>АКЦИИ</h2>
           </div>
-
         </div>
-      </div>
-    </section>
-  </main>
-
-  <header class="header">
-    <div class="container">
-      <div class="header-lineee">
-        <div class="title2">
-          <h1>EVENTS</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="top">
-      <div class="container">
         <div class="rfcreator">
           <div class="podtext">
-            <p>РАЗ В МЕСЯЦ НАЧИНАЕТСЯ HOT SALES. СЕКРЕТ В ТОМ, ЧТО ВЫ НЕ ЗНАЕТЕ КУДА ПОЕДЕТЕ :)<br>
-              HOT SALES - ВРЕМЕННЫЕ СКИДКИ НА КРУТЫЕ МЕСТА, АНОНС КОНКУРСОВ И ДРУГИЕ ПЛЮШКИ</p>
+            <p>РАЗ В МЕСЯЦ НАЧИНАЮТСЯ ГОРЯЧИЕ РАСПРОДАЖИ. СЕКРЕТ В ТОМ, ЧТО ВЫ НЕ ЗНАЕТЕ, КУДА ЕДЕТЕ :)</p>
+            <p>ГОРЯЧИЕ РАСПРОДАЖИ - ВРЕМЕННЫЕ СКИДКИ НА КРУТЫЕ МЕСТА, АНОНСЫ КОНКУРСОВ И ДРУГИЕ ПРИЯТНОСТИ</p>
           </div>
           <div class="cards">
             <div class="poleskartami">
               <div class="karta">
-                <div class="kartinka"><p>?</p></div>
-                <div class="price"><a href="order.html"><p>25.000р</p></a></div>
+                <div class="kartinka" style="background-image: url(https://images.unsplash.com/photo-1552035612-995478a3c634?w=500&q=80); background-size: cover; background-position: center;"></div>
+                <div class="price"><a href="order.html"><p>25,000₽</p></a></div>
               </div>
               <div class="karta">
-                <div class="kartinka"><p>?</p></div>
-                <div class="price"><a href="order.html"><p>15.000р</p></a></div>
+                <div class="kartinka" style="background-image: url(https://images.unsplash.com/photo-1551923193-75a34a33d7a8?w=500&q=80); background-size: cover; background-position: center;"></div>
+                <div class="price"><a href="order.html"><p>15,000₽</p></a></div>
               </div>
               <div class="karta">
-                <div class="kartinka"><p>?</p></div>
-                <div class="price"><a href="order.html"><p>25.000р</p></a></div>
+                <div class="kartinka" style="background-image: url(https://images.unsplash.com/photo-1552594924-272023a8d820?w=500&q=80); background-size: cover; background-position: center;"></div>
+                <div class="price"><a href="order.html"><p>25,000₽</p></a></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
   </main>
 
-<footer id="block-to-remove">
-  <div class="container">
-    <div class="rabota">
-      <div class="pikcha">
-        <div class="evreyka">
-        </div>
-        <div class="devochka">
-        </div>
-        <div class="babka">
-        </div>
-        <div class="mujik">
-        </div>
-      </div>
-      <div class="textfo">
-
-        <div class="RABotat">
-
-          <div class="footerheader">
-            <h1>Хочешь стать членом нашей дружной семьи?</h1>
+  <footer id="block-to-remove">
+    <div class="container">
+      <div class="rabota">
+        <div class="textfo">
+          <div class="RABotat">
+            <div class="footerheader">
+              <h3>Хотите стать членом нашей дружной семьи?</h3>
+            </div>
           </div>
-
-          <div class="listf">
-              <div class="kostyl">1.Афигенный коллектив</div>
-              <div class="kostyl">2.Пьянки за счёт начальства</div>
-              <div class="kostyl">3.Много платим</div>
-              <div class="kostyl">4.Не надо работать</div>
+          <div class="buttonwork">
+            <a href="contacts.html">Присоединяйтесь</a>
           </div>
-
         </div>
-
-        <div class="buttonwork">
-          <a href="contacts.html"><p>Присоединяйся</p></a>
-        </div>
-
       </div>
     </div>
-  </div>
-</footer>
-  
+  </footer>
 
-<script src="js/app.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/theme.js" defer></script>
 
 </body>
 </html>

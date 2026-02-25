@@ -1,70 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Irkutsk travel</title>
-
-	<link href="css/calculator.css" type="text/css" rel="stylesheet" media="screen">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по Иркутску - Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
 </head>
 <body>
 
-  <a href="#" id="bubu">
-    <div id="x"></div>
-    </a>
-
   <header class="header">
-
     <div class="container">
       <div class="header-line">
         <div class="header-logo">
-          <img src="images/path.png" alt="">
+          <a href="index.html"><img src="images/path.png" alt="Логотип Путешествия по Иркутску"></a>
         </div>
-
         <nav class="menu">
-
           <ul class="menu__list">
-
-            <li class="menu__item">
-            <a class="menu__link" href="index.html">HOME</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="about.html">ABOUT US</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="calculator.html">CALCULATOR</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="contacts.html">CONTACTS</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="orderhere" href="order.html">ORDER HERE</a>
-            </li>
-
+            <li class="menu__item"><a class="menu__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О НАС</a></li>
+            <li class="menu__item"><a class="menu__link" href="calculator.html">КАЛЬКУЛЯТОР</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="menu__item"><a class="orderhere" href="order.html">ЗАКАЗАТЬ</a></li>
           </ul>
-
         </nav>
-
+        <button id="theme-toggle">Сменить тему</button>
       </div>
     </div>
-
   </header>
 
   <main class="main">
-    <section class="top">
-      <div class="container">
+    <div class="container">
         <div class="telo">
           <div id="calculator-container">
-            <h1>Travel Cost Calculator</h1>
+            <h1>Калькулятор стоимости путешествия</h1>
             <form id="calculator-form">
-                <label for="from-city">From:</label>
+                <label for="from-city">Откуда:</label>
                 <select id="from-city" name="from-city">
                     <option value="irkutsk">Иркутск</option>
                     <option value="bratsk">Братск</option>
@@ -72,27 +44,31 @@
                     <option value="listvyanka">Листвянка</option>
                 </select>
     
-                <label for="to-city">To:</label>
+                <label for="to-city">Куда:</label>
                 <select id="to-city" name="to-city">
                     <option value="irkutsk">Иркутск</option>
                     <option value="bratsk">Братск</option>
                     <option value="angarsk">Ангарск</option>
                     <option value="listvyanka">Листвянка</option>
                 </select>
+
+                <label for="transport-mode">Транспорт:</label>
+                <select id="transport-mode" name="transport-mode">
+                    <option value="car">Автомобиль</option>
+                    <option value="train">Поезд</option>
+                    <option value="plane">Самолет</option>
+                </select>
     
-                <button type="button" id="calculate-button">Calculate</button>
+                <button type="button" id="calculate-button">Рассчитать</button>
             </form>
             <div id="result"></div>
         </div>
         </div>
       </div>
-      </div>
-    </section>
   </main>
 
-
   <script src="js/calculator.js" defer></script>
-
+  <script src="js/theme.js" defer></script>
 
 </body>
 </html>

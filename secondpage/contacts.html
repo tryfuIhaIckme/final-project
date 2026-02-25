@@ -1,113 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Irkutsk travel</title>
-
-	<link href="contacts.css" type="text/css" rel="stylesheet" media="screen">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия по Иркутску - Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen">
 </head>
 <body>
 
-  <a href="#" id="bubu">
-    <div id="x"></div>
-    </a>
-
   <header class="header">
-
     <div class="container">
       <div class="header-line">
         <div class="header-logo">
-          <img src="images/path.png" alt="">
+          <a href="index.html"><img src="images/path.png" alt="Логотип Путешествия по Иркутску"></a>
         </div>
-
         <nav class="menu">
-
           <ul class="menu__list">
-
-            <li class="menu__item">
-            <a class="menu__link" href="index.html">HOME</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="about.html">ABOUT US</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="calculator.html">CALCULATOR</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="menu__link" href="contacts.html">CONTACTS</a>
-            </li>
-
-            <li class="menu__item">
-            <a class="orderhere" href="order.html">ORDER HERE</a>
-            </li>
-
+            <li class="menu__item"><a class="menu__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="menu__item"><a class="menu__link" href="about.html">О НАС</a></li>
+            <li class="menu__item"><a class="menu__link" href="calculator.html">КАЛЬКУЛЯТОР</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="menu__item"><a class="orderhere" href="order.html">ЗАКАЗАТЬ</a></li>
           </ul>
-
         </nav>
-
+        <button id="theme-toggle">Сменить тему</button>
       </div>
     </div>
-
   </header>
 
   <main class="main">
-    <section class="top">
-      <div class="container">
+    <div class="container">
         <div class="telo">
-            <div class="flex-container">
-              <div class="contacti">
+            <h1>Свяжитесь с нами</h1>
+            <div class="contact-section">
+                <h3>Наши контакты</h3>
+                <p>Вы можете связаться с нами любым удобным для вас способом:</p>
+                <ul class="contact-list">
+                    <li><a href="tel:+79181233332">Телефон: +7-918-123-33-32</a></li>
+                    <li><a href="https://www.t.me/asdsadasd">Telegram: @asdsadasd</a></li>
+                    <li><a href="https://www.vk.com">VK: Следите за нами в VK</a></li>
+                </ul>
+            </div>
+            
+            <hr style="margin: 2rem 0;">
 
-                <a href="tel:+79181233332">
-                <div class="kontakt">
-                  <div class="ikonka"></div>
-                  <div class="textikonka"><p>+7-918-123-3332</p></div>
+            <div id="survey-container">
+                <h3>Оставьте отзыв</h3>
+                <p>Мы ценим ваше мнение и хотим стать лучше. Поделитесь своими впечатлениями о нашей работе!</p>
+                <form id="feedback-form">
+                    <label for="user-name">Ваше имя:</label>
+                    <input type="text" id="user-name" name="user-name" required>
+                    
+                    <label for="user-email">Ваш Email:</label>
+                    <input type="email" id="user-email" name="user-email" required>
+                    
+                    <label for="feedback-message">Ваш отзыв:</label>
+                    <textarea id="feedback-message" name="feedback-message" rows="6" required style="width: 100%; padding: 12px; margin-bottom: 1.5rem; border-radius: 10px; border: 1px solid var(--border-light); background-color: var(--bg-light); color: var(--text-primary-light); box-sizing: border-box; font-size: 1rem; font-family: inherit;"></textarea>
+                    
+                    <button type="submit">Отправить</button>
+                </form>
+                <div id="discount-notification" style="display: none; margin-top: 1.5rem; color: var(--secondary-color); font-weight: bold; text-align: center;">
+                    <p>Спасибо за ваш отзыв! Вы получите скидку 10% на следующий заказ.</p>
                 </div>
-                </a>
-
-                <a href="https://www.t.me/asdsadasd">
-                <div class="kontakt">
-                  <div class="ikonkas"></div>
-                  <div class="textikonka">@asdsadasd</div>
-                </div>
-                </a>
-
-                <a href="https://www.vk.com">
-                <div class="kontakt">
-                  <div class="ikonkass"></div>
-                  <div class="textikonka">Podpishis</div>
-                </div>
-                </a>
-
-              </div>
-
-              <div class="test">
-                <div id="survey-container">
-                  <form id="survey-form">
-                      <div id="questions-container"></div>
-                      <button type="submit">Отправить</button>
-                  </form>
-                  <div id="discount-notification" class="hidden">
-                      <p>Извините за неудобства! Вы получите скидку на следующий заказ.</p>
-                  </div>
-                </div>
-              </div>
             </div>
         </div>
       </div>
-      </div>
-    </section>
   </main>
 
-
-  <script src="contacts.js" defer></script>
-
+  <script>
+    document.getElementById('feedback-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('discount-notification').style.display = 'block';
+    });
+  </script>
+  <script src="js/theme.js" defer></script>
 
 </body>
 </html>
